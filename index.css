@@ -1,0 +1,41 @@
+.mainContainer {
+    background: #000;
+    display: flex;
+    color: gray;
+    padding: 30px;
+    gap: 30px;
+    height: 100%;
+    align-items: start;
+}
+
+.header {
+    color: #fff;
+}
+
+.illustrationWrapper {
+    display: grid;
+    grid-template-rows: 150px max-content;
+    gap: 50px;
+}
+
+.contentWrapper {
+    display: grid;
+    gap: 16px;
+    line-height: 1.5;
+    padding: 30px;
+}
+
+.illustrationWrapper img {
+    width: 300px;
+}
+
+.contentWrapper:hover {
+    background-color: darkgray;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+    .mainContainer {
+        display: grid;
+    }
+}
